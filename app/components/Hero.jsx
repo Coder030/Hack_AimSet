@@ -3,6 +3,7 @@ import HeroNavbar from './HomeComponents/HeroNavbar'
 import PeopleImage from '@/app/assets/people.png'
 import MapImage from '@/app/assets/map.png'
 import Image from 'next/image'
+import "./hero.css"
 const Hero = () => {
   return (
     <div className='bg-[#253037] w-full 
@@ -13,7 +14,7 @@ const Hero = () => {
       <div className='bg-[#FF9933] w-[22px] h-[22px] rounded-full
         absolute right-[10%] md:top-[30%] top-[14%]'/>
       <h1 className='md:text-[50px] text-center leading-[50px] 
-      font-bold text-[#F1F8EC] nunito mt-20 text-[30px]'>
+      font-bold text-[#F1F8EC] nunito mt-20 text-[30px], headingTry'>
       Resonate with the <br />
       visitor's problem
       </h1>
