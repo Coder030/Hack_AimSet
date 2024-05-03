@@ -1,10 +1,13 @@
 import React from 'react'
 import HeroNavbar from './HomeComponents/HeroNavbar'
-
+import PeopleImage from '@/app/assets/people.png'
+import MapImage from '@/app/assets/map.png'
+import Image from 'next/image'
 const Hero = () => {
   return (
-    <div className='bg-[#253037] w-full h-auto text-[#F1F8EC]
-    p-4'>
+    <div className='bg-[#253037] w-full 
+    h-auto text-[#F1F8EC]
+    '>
       <HeroNavbar />
       <div className='flex justify-center flex-col gap-5'>
       <h1 className='text-[50px] text-center leading-[50px] 
@@ -21,6 +24,15 @@ const Hero = () => {
       Join your local community
       </button>
       </div>
+      <div>
+      <div className='relative'>
+  <Image src={MapImage} alt="map" height={500} className='w-1/5 absolute 
+  inset-0 translate-y-[104%] translate-x-[19px] mx-auto hidden md:flex' />
+  <Image src={PeopleImage} alt="people" height={500} className='w-full' />
+</div>
+
+
+    </div>
     </div>
   )
 }
