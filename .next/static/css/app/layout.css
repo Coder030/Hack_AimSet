@@ -497,6 +497,37 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.flex {
+  display: flex;
+}
+.h-\[300px\] {
+  height: 300px;
+}
+.h-\[70px\] {
+  height: 70px;
+}
+.w-full {
+  width: 100%;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.bg-\[\#253037\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 48 55 / var(--tw-bg-opacity));
+}
+.p-4 {
+  padding: 1rem;
+}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -504,13 +535,27 @@ video {
 .font-bold {
   font-weight: 700;
 }
+.font-black {
+  font-weight: 900;
+}
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 .underline {
   text-decoration-line: underline;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.nunito {
+    font-family: 'Nunito', sans-serif;
+  }
+  
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app\\layout.js","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
