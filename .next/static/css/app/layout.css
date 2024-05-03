@@ -560,6 +560,12 @@ video {
 .right-\[10\%\] {
   right: 10%;
 }
+.top-\[15\%\] {
+  top: 15%;
+}
+.top-\[14\%\] {
+  top: 14%;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -784,6 +790,14 @@ video {
 
 
 @media (min-width: 768px) {
+
+  .md\:top-\[30\%\] {
+    top: 30%;
+  }
+
+  .md\:left-\[6rem\] {
+    left: 6rem;
+  }
 
   .md\:flex {
     display: flex;
