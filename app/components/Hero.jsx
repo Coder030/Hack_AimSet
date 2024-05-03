@@ -11,7 +11,7 @@ const Hero = () => {
       <HeroNavbar />
       <div className='flex justify-center flex-col gap-5 relative'>
       <div className='bg-[#FF9933] w-[22px] h-[22px] rounded-full
-        absolute right-[10%] top-[30%]'/>
+        absolute right-[10%] md:top-[30%] top-[14%]'/>
       <h1 className='md:text-[50px] text-center leading-[50px] 
       font-bold text-[#F1F8EC] nunito mt-20 text-[30px]'>
       Resonate with the <br />
@@ -29,7 +29,7 @@ const Hero = () => {
       <div>
       <div className='relative'>
         <div className='bg-[#138808] w-[22px] h-[22px] rounded-full
-        absolute left-4'/>
+        absolute left-4 md:left-[6rem]'/>
         <div className='bg-[#FFFFFF] w-[22px] h-[22px] rounded-full
         absolute right-[20%] bottom-[60%]'/>
          
