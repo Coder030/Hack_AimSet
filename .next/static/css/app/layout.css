@@ -497,6 +497,13 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mt-20 {
+  margin-top: 5rem;
+}
 .flex {
   display: flex;
 }
@@ -506,55 +513,142 @@ video {
 .h-\[70px\] {
   height: 70px;
 }
+.h-auto {
+  height: auto;
+}
+.w-11\/12 {
+  width: 91.666667%;
+}
+.w-fit {
+  width: fit-content;
+}
 .w-full {
   width: 100%;
+}
+.w-2\/5 {
+  width: 40%;
+}
+.w-1\/5 {
+  width: 20%;
+}
+.flex-col {
+  flex-direction: column;
 }
 .items-center {
   align-items: center;
 }
+.justify-center {
+  justify-content: center;
+}
 .justify-between {
   justify-content: space-between;
 }
-.gap-1 {
-  gap: 0.25rem;
-}
 .gap-8 {
   gap: 2rem;
+}
+.gap-5 {
+  gap: 1.25rem;
+}
+.rounded-md {
+  border-radius: 0.375rem;
+}
+.rounded-sm {
+  border-radius: 0.125rem;
 }
 .bg-\[\#253037\] {
   --tw-bg-opacity: 1;
   background-color: rgb(37 48 55 / var(--tw-bg-opacity));
 }
+.bg-\[\#282828\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 40 40 / var(--tw-bg-opacity));
+}
+.bg-\[\#F1F8FC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 248 252 / var(--tw-bg-opacity));
+}
 .p-4 {
   padding: 1rem;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.p-2 {
+  padding: 0.5rem;
 }
-.font-bold {
-  font-weight: 700;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-\[50px\] {
+  font-size: 50px;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .font-black {
   font-weight: 900;
 }
-.text-red-500 {
+.font-bold {
+  font-weight: 700;
+}
+.leading-3 {
+  line-height: .75rem;
+}
+.leading-5 {
+  line-height: 1.25rem;
+}
+.leading-\[30px\] {
+  line-height: 30px;
+}
+.leading-\[35px\] {
+  line-height: 35px;
+}
+.leading-\[40px\] {
+  line-height: 40px;
+}
+.leading-\[45px\] {
+  line-height: 45px;
+}
+.leading-\[50px\] {
+  line-height: 50px;
+}
+.text-\[\#F1F8EC\] {
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+  color: rgb(241 248 236 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.underline {
-  text-decoration-line: underline;
+.text-\[\#253037\] {
+  --tw-text-opacity: 1;
+  color: rgb(37 48 55 / var(--tw-text-opacity));
+}
+.duration-200 {
+  transition-duration: 200ms;
+}
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
 
 .nunito {
     font-family: 'Nunito', sans-serif;
   }
+
+
+.hover\:bg-\[\#e0e6e9\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 230 233 / var(--tw-bg-opacity));
+}
   
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app\\layout.js","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
