@@ -11,7 +11,7 @@ const HeroNavbar = () => {
       </Link>
 
       {/* links */}
-      <div className='flex items-center gap-8 text-white'>
+      <div className='flex items-center md:gap-8 text-white gap-1'>
       <button>Success stories</button>
       <button>About</button>
       </div>

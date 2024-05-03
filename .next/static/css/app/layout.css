@@ -524,12 +524,51 @@ video {
 .right-\[50\%\] {
   right: 50%;
 }
+.left-4 {
+  left: 1rem;
+}
+.bottom-4 {
+  bottom: 1rem;
+}
+.right-4 {
+  right: 1rem;
+}
+.right-\[20\%\] {
+  right: 20%;
+}
+.bottom-60 {
+  bottom: 15rem;
+}
+.bottom-\[60\%\] {
+  bottom: 60%;
+}
+.left-\[20\%\] {
+  left: 20%;
+}
+.top-\[30\%\] {
+  top: 30%;
+}
+.left-\[60\%\] {
+  left: 60%;
+}
+.left-\[40\%\] {
+  left: 40%;
+}
+.right-\[40\%\] {
+  right: 40%;
+}
+.right-\[10\%\] {
+  right: 10%;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 .mt-20 {
   margin-top: 5rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .flex {
   display: flex;
@@ -549,6 +588,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-\[22px\] {
+  height: 22px;
+}
 .w-11\/12 {
   width: 91.666667%;
 }
@@ -563,6 +605,12 @@ video {
 }
 .w-1\/5 {
   width: 20%;
+}
+.w-3\/5 {
+  width: 60%;
+}
+.w-\[22px\] {
+  width: 22px;
 }
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
@@ -602,11 +650,23 @@ video {
 .gap-5 {
   gap: 1.25rem;
 }
+.gap-4 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
 .rounded-md {
   border-radius: 0.375rem;
 }
 .rounded-sm {
   border-radius: 0.125rem;
+}
+.rounded-full {
+  border-radius: 9999px;
 }
 .bg-\[\#253037\] {
   --tw-bg-opacity: 1;
@@ -619,6 +679,18 @@ video {
 .bg-\[\#F1F8FC\] {
   --tw-bg-opacity: 1;
   background-color: rgb(241 248 252 / var(--tw-bg-opacity));
+}
+.bg-\[\#138808\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 136 8 / var(--tw-bg-opacity));
+}
+.bg-\[\#FFFFFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-\[\#FF9933\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 153 51 / var(--tw-bg-opacity));
 }
 .p-4 {
   padding: 1rem;
@@ -647,6 +719,9 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+.text-\[30px\] {
+  font-size: 30px;
 }
 .font-black {
   font-weight: 900;
@@ -712,6 +787,34 @@ video {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:h-2\/5 {
+    height: 40%;
+  }
+
+  .md\:w-2\/5 {
+    width: 40%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
+  .md\:text-\[50px\] {
+    font-size: 50px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+
+  .lg\:w-1\/5 {
+    width: 20%;
   }
 }
   
