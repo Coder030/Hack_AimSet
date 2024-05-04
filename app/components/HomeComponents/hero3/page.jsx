@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import alc from "../../../assets/alc.png";
-import arc from "../../../assets/arc.png";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai"; // Importing React icons
+
 import ph1 from "../../../assets/placeHol1.png";
 import ph2 from "../../../assets/ph2.png";
 import ph3 from "../../../assets/ph3.png";
@@ -76,14 +76,16 @@ function Hero3() {
       {/* Navigation buttons */}
       <div className="text-center">
         <button
-          className="mr-10"
+          className="mr-10 bg-[#374853] p-3 rounded-full"
           onClick={handlePrev}
           disabled={number === 0}
         >
-          <Image src={alc} alt="map" className="m-0" />
+          <AiOutlineArrowLeft size={32} color="#fff" />
         </button>
-        <button onClick={handleNext} disabled={number === all.length - 1}>
-          <Image src={arc} alt="map" className="m-0" />
+        <button onClick={handleNext} disabled={number === all.length - 1}
+          className="bg-[#374853] p-3 rounded-full ">
+          <AiOutlineArrowRight size={32} color="#fff" />
+
         </button>
       </div>
     </div>
