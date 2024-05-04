@@ -503,6 +503,9 @@ video {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .inset-0 {
   inset: 0px;
 }
@@ -520,6 +523,12 @@ video {
 }
 .top-\[14\%\] {
   top: 14%;
+}
+.top-0 {
+  top: 0px;
+}
+.z-50 {
+  z-index: 50;
 }
 .mx-auto {
   margin-left: auto;
@@ -595,6 +604,9 @@ video {
 }
 .rounded-sm {
   border-radius: 0.125rem;
+}
+.border-b {
+  border-bottom-width: 1px;
 }
 .bg-\[\#138808\] {
   --tw-bg-opacity: 1;

@@ -4,7 +4,7 @@ import React from 'react'
 const HeroNavbar = () => {
   return (
     <div className='bg-[#253037] w-11/12 h-[70px] p-4
-    flex justify-between items-center mx-auto'>
+    flex justify-between items-center mx-auto sticky top-0 z-50 border-b'>
       {/* logo */}
       <Link href='/'>
       <button className='nunito font-black text-white'>Logo</button>
