@@ -1,5 +1,4 @@
-"use client";
-
+'use client'
 import React, { useState } from "react";
 import Image from "next/image";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai"; // Importing React icons
@@ -56,9 +55,7 @@ function Hero3() {
       </p>
       {/* Display current item */}
       <div className="flex justify-center items-center">
-        <div className="w-full h-auto bg-[#374853]
-         mx-[20px] rounded-3xl justify-between p-8
-         mt-[80px] mb-[40px] ">
+        <div className="w-full h-auto bg-[#374853] mx-[20px] rounded-3xl justify-between p-8 mt-[80px] mb-[40px] ">
           <div className="grid grid-cols-1 lg:grid-cols-2 text-[#F5F7F8]">
             <div className="p-5">
               <Image src={currentItem.source} alt="image" className="w-full h-full rounded-2xl" />
@@ -66,8 +63,7 @@ function Hero3() {
             <div className="p-5 flex flex-col justify-center gap-5">
               <h2 className="text-2xl font-bold">{currentItem.heading}</h2>
               <p className="text-base">{currentItem.body}</p>
-              <button className='text-[#F9FAFB] bg-[#282828] w-fit
-              p-3 rounded-md mt-4 font-bold'>Learn more</button>
+              <button className='text-[#F9FAFB] bg-[#282828] w-fit p-3 rounded-md mt-4 font-bold'>Learn more</button>
             </div>
           </div>
         </div>
@@ -82,10 +78,12 @@ function Hero3() {
         >
           <AiOutlineArrowLeft size={32} color="#fff" />
         </button>
-        <button onClick={handleNext} disabled={number === all.length - 1}
-          className="bg-[#374853] p-3 rounded-full ">
+        <button 
+          onClick={handleNext} 
+          disabled={number === all.length - 1}
+          className="bg-[#374853] p-3 rounded-full "
+        >
           <AiOutlineArrowRight size={32} color="#fff" />
-
         </button>
       </div>
     </div>
