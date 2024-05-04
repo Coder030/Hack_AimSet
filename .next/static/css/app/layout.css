@@ -672,25 +672,17 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
-
-
-body {
-  font-family: "Nunito";
+body{
+  font-family: Nunito
 }
-
-
-
 
 .hover\:bg-\[\#e0e6e9\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(224 230 233 / var(--tw-bg-opacity));
 }
-
-
-
 
 @media (min-width: 768px) {
 
@@ -719,13 +711,9 @@ body {
   }
 }
 
-
-
-
 @media (min-width: 1024px) {
 
   .lg\:w-1\/5 {
     width: 20%;
   }
 }
-  
