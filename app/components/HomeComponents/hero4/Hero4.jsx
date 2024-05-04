@@ -52,7 +52,6 @@ const Hero4 = () => {
           />
         <div className='bg-[#F5F7F8] flex flex-col h-auto mb-3 gap-4
         w-11/12 mx-auto'>
-            
             {/* subheading */}
             <div className='mx-auto'>
                 <h1 className="md:text-[50px] text-center leading-[50px] font-bold text-[#000000] nunito mt-20 text-[40px]">Recent initiative</h1>
