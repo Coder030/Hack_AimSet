@@ -914,6 +914,13 @@ video {
 .text-\[14px\] {
   font-size: 14px;
 }
+.text-\[30px\] {
+  font-size: 30px;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 .font-black {
   font-weight: 900;
 }
@@ -1072,6 +1079,10 @@ body {
     font-size: 20px;
   }
 
+  .md\:text-\[40px\] {
+    font-size: 40px;
+  }
+
   .md\:leading-\[60px\] {
     line-height: 60px;
   }
@@ -1081,6 +1092,10 @@ body {
 
   .lg\:ml-\[40px\] {
     margin-left: 40px;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {
@@ -1093,6 +1108,10 @@ body {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:text-\[50px\] {
+    font-size: 50px;
   }
 }
 

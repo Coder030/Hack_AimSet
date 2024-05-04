@@ -39,10 +39,10 @@ const footerData = [
       <div className="flex justify-between gap-5 relative mt-10">
         <div
           className="bg-[#FF9933] w-[22px] h-[22px] rounded-full
-        absolute right-[50%] md:top-[30%] top-[14%]"
+        absolute right-[50%] md:top-[30%] top-[14%] hidden lg:block"
         />
         <h1
-          className="md:text-[50px] leading-[50px] 
+          className="lg:text-[50px] leading-[50px] 
       font-bold text-[#F1F8EC] nunito text-[40px]"
         >
           Be part
@@ -74,7 +74,7 @@ const footerData = [
           />
           <div
             className="bg-[#138808] w-[22px] h-[22px] rounded-full
-        absolute right-[20%] bottom-[26%]"
+        absolute right-[20%] bottom-[26%] md:block hidden"
           />
           <Image
             src={MapImage}
@@ -89,8 +89,8 @@ const footerData = [
               <div className="flex flex-col gap-1">
                 <h6 className="md:text-[20px] leading-[50px] 
       font-bold text-[#F1F8EC] nunito text-[14px]">Logo</h6>
-                <span className="w-full md:w-[60%] text-[#F1F8EC]">
-                  Make Your Neighborhood Better
+                <span className="w-full  text-[#F1F8EC]">
+                  Make Your <br /> Neighborhood Better
                 </span>
               </div>
               <p className="mt-20">
