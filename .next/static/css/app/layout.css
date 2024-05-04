@@ -667,6 +667,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-\[300px\] {
+  height: 300px;
+}
 .w-1\/5 {
   width: 20%;
 }
@@ -767,6 +770,9 @@ video {
 }
 .rounded-sm {
   border-radius: 0.125rem;
+}
+.rounded-2xl {
+  border-radius: 1rem;
 }
 .rounded-b-3xl {
   border-bottom-right-radius: 1.5rem;

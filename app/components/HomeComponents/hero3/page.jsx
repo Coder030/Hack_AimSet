@@ -61,11 +61,13 @@ function Hero3() {
          mt-[80px] mb-[40px] ">
           <div className="grid grid-cols-1 lg:grid-cols-2 text-[#F5F7F8]">
             <div className="p-5">
-              <Image src={currentItem.source} alt="image" className="w-full h-full" />
+              <Image src={currentItem.source} alt="image" className="w-full h-full rounded-2xl" />
             </div>
-            <div className="p-5">
+            <div className="p-5 flex flex-col justify-center gap-5">
               <h2 className="text-2xl font-bold">{currentItem.heading}</h2>
               <p className="text-base">{currentItem.body}</p>
+              <button className='text-[#F9FAFB] bg-[#282828] w-fit
+              p-3 rounded-md mt-4 font-bold'>Learn more</button>
             </div>
           </div>
         </div>
