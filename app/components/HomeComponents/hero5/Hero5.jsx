@@ -4,6 +4,31 @@ import MapImage from "@/app/assets/map.png";
 import PeopleImage from "@/app/assets/people.png";
 
 function Hero5() {
+  // Footer data
+const footerData = [
+  {
+    title: "General",
+    links: [
+      { name: "About Us", href: "#" },
+      { name: "Terms & Conditions", href: "#" },
+      { name: "Privacy Policy", href: "#" },
+    ],
+  },
+  {
+    title: "Community",
+    links: [
+      { name: "Join Community", href: "#" },
+      { name: "Community Guidelines", href: "#" },
+    ],
+  },
+  {
+    title: "Support",
+    links: [
+      { name: "Contact Us", href: "#" },
+      { name: "FAQs", href: "#" },
+    ],
+  },
+];
   return (
     <div
       className="bg-[#374853] w-full 
@@ -49,14 +74,14 @@ function Hero5() {
           />
           <div
             className="bg-[#138808] w-[22px] h-[22px] rounded-full
-        absolute right-[20%] bottom-[60%]"
+        absolute right-[20%] bottom-[26%]"
           />
           <Image
             src={MapImage}
             alt="map"
             height={500}
             className="w-1/5 absolute 
-  inset-0 translate-y-[17%] translate-x-[19px] mx-auto hidden md:flex"
+  inset-0 translate-y-[17%] translate-x-[126%] hidden lg:flex"
           />
           <div className="flex justify-between h-[350px] w-full mt-20">
             {/* left */}
@@ -73,14 +98,24 @@ function Hero5() {
               </p>
             </div>
             {/* right */}
-            <div className="grid grid-cols-1 lg:grid-cols-3">
-              <div className="flex flex-col">
+            <div className="grid grid-cols-1 md:grid-cols-3">
+            {footerData.map((item, index) => (
+              <div key={index} className="flex flex-col">
                 <h6 className="md:text-[20px] leading-[50px] 
-      font-bold text-[#F1F8EC] nunito text-[14px]">General</h6>
-                <span className="w-full text-[#F1F8EC]">
-                  About Us
-                </span>
+                font-bold text-[#F1F8EC] nunito text-[14px]">
+                  {item.title}
+                </h6>
+                {item.links.map((link, linkIndex) => (
+                  <a
+                    key={linkIndex}
+                    href={link.href}
+                    className="w-full text-[#F1F8EC] hover:underline"
+                  >
+                    {link.name}
+                  </a>
+                ))}
               </div>
+            ))}
             </div>
           </div>
         </div>
