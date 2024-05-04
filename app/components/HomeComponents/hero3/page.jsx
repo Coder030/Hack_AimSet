@@ -59,7 +59,7 @@ function Hero3() {
               className="text-[#FFFFFF] bg-[#282828] w-fit
         py-2 px-4 rounded-md float-left"
             >
-              Sign In
+              View more
             </button>
             <div class="absolute w-full h-0.5 bg-white bottom-0 left-0 right-[50%]"></div>
           </div>
