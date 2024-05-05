@@ -19,12 +19,13 @@ const HeroNavbar = () => {
       </div>
 
       {/* button */}
-      <button
+      <Link
+        href="https://pleasing-ringtail-59.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A3000%2Fdashboard"
         className="text-white bg-[#282828] w-fit
         py-2 px-4 rounded-md"
       >
         Sign In
-      </button>
+      </Link>
     </div>
   );
 };
