@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider, SignedOut } from "@clerk/nextjs";
 
-// const inter = Inter({ subsets: ["latin"] });
+const nun = Nunito({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Svagram",
@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body>{children}</body>
+        <body className={nun.className}>{children}</body>
       </html>
     </ClerkProvider>
   );

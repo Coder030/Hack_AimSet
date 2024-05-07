@@ -1,3 +1,6 @@
+const { Nunito } = require("next/font/google");
+const plugin = require("tailwindcss/plugin");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -16,6 +19,10 @@ module.exports = {
     colors: {
       "mine-1": "#f5f7f8",
     },
+    fontFamily: {
+      // prettier-ignore
+      "nun": [Nunito, "sans-serif"],
+    },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-current")],
 };
