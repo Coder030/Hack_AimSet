@@ -35,7 +35,7 @@ const Hero4 = () => {
         absolute left-4 md:left-[6rem] hidden md:block"
       />
       <div
-        className="bg-[#F5F7F8] flex flex-col h-auto mb-3 gap-4
+        className="flex flex-col h-auto mb-3 gap-4
         w-11/12 mx-auto"
       >
         {/* subheading */}
