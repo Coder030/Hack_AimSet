@@ -15,7 +15,7 @@ npm install
 ```
 
 ### Third Step
-Install the dypendency
+Move to the project directory
 ```bash 
 cd Hack_AimSet
 ```
