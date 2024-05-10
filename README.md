@@ -2,9 +2,25 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, go to your CLI and type in - 
-#### git clone https://github.com/Coder030/Hack_AimSet  
+### First Step
+Clone the repository
+```bash 
+git clone https://github.com/Coder030/Hack_AimSet
+```
 
+### Second Step
+Install the dependencies
+```bash 
+npm install
+```
+
+### Third Step
+Install the dypendency
+```bash 
+cd Hack_AimSet
+```
+
+### Fourth Step
 Then run the development server using:
 
 ```bash
