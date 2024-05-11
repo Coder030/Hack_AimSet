@@ -10,8 +10,6 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^5.0.0-beta.46",
-    "@radix-ui/react-select": "^2.0.0",
-    "@radix-ui/themes": "^3.0.3",
     "@react-native-community/geolocation": "^3.2.1",
     "axios": "^1.6.8",
     "ip2location-io-nodejs": "^1.0.4",
