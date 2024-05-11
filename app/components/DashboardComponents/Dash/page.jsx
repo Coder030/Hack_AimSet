@@ -5,8 +5,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaRegThumbsUp } from "react-icons/fa";
 import "./style.css";
-import "@radix-ui/themes/styles.css";
-import { Select } from "@radix-ui/themes";
 
 function Dash(props) {
   const [isOpen, setIsOpen] = useState(false);

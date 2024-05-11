@@ -1,6 +1,5 @@
 import { Nunito } from "next/font/google";
 import "./globals.css";
-import { Theme } from "@radix-ui/themes";
 
 import { ClerkProvider, SignedOut } from "@clerk/nextjs";
 
