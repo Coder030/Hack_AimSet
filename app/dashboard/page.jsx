@@ -1,22 +1,41 @@
-import { auth, currentUser } from "@clerk/nextjs/server";
+"use client";
+
+// import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
 import LocationComponent from "../components/GetLocation/page";
 import { IoSearch } from "react-icons/io5";
-import Over from "../components/DashboardComponents/Dash/over/page";
+import Dash from "../components/DashboardComponents/Dash/page";
+import React, { useEffect, useState } from "react";
 
-export default async function Page() {
-  const { userId } = auth();
-
-  const user = await currentUser();
+export default function Page() {
+  // const user = await currentUser();
+  const [searchBar, setSearchBar] = useState("");
+  const user = {
+    firstName: "Kartik",
+    lastName: "Garg",
+    username: "kartik",
+    imageUrl:
+      "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
+  };
+  const user2 = {
+    image: user.imageUrl,
+    firstName: user.firstName,
+    lastName: user.lastName,
+    username: user.username,
+    heading: "Heading Will Go Here",
+    About:
+      "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ab eius suscipit. Porro corrupti consequuntur eius aliquam a eum sit? Quidem, non corporis? Obcaecati magni aliquid expedita eius! Reiciendis animi et soluta unde itaque perspiciatis in rerum ullam inventore temporibus saepe, alias quo tenetur porro facere veniam, dignissimos maxime non sint consequatur nobis distinctio quis vitae minus. Animi quasi sed ipsa voluptatibus, harum nisi, cum deleniti mollitia dicta omnis dolorem repellat asperiores.",
+  };
+  // console.log(searchBar);
   return (
     <>
       <div className="bg-[#374853] py-[30px] flex items-center border-b-[1px] border-[#FFFFFF] sticky top-0 left-0 z-50	">
         <div className="flex w-[100%] items-center">
           <p className="text-[#FFFFFF] ml-[3%] text-[25px]">Logo</p>
-          <button className="text-[#FFFFFF] text-[15px] ml-[6%] focus:bg-gradient-to-l from-[#627F92] to-[#374853] p-[15px] rounded-full px-[35px]">
+          <button className="text-[#FFFFFF] text-[15px] ml-[6%] focus:border-b-[1.5px] p-[10px]">
             Initiative feed
           </button>
-          <button className="text-[#FFFFFF] text-[15px] ml-[0.1%] focus:bg-gradient-to-l from-[#627F92] to-[#374853] p-[15px] px-[35px] rounded-full">
+          <button className="text-[#FFFFFF] text-[15px] ml-[3%] border-b-[1.5px] p-[10px]">
             Dashboard
           </button>
         </div>
@@ -26,6 +45,10 @@ export default async function Page() {
             type="text"
             className="w-[400px] h-[50px] rounded-md focus:outline-none px-[15px]	"
             placeholder="🔎   Search the initiative..."
+            value={searchBar}
+            onChange={(e) => {
+              setSearchBar(e.target.value);
+            }}
           />
           <Image
             src={user.imageUrl}
@@ -38,20 +61,17 @@ export default async function Page() {
 
       <div className="bg-[#374853] p-[35px] px-[45px]">
         <p className="text-[25px] text-[#FFFFFF]">
-          Welcome back, {user.firstName} {user.lastName}!{" "}
+          Welcome back, {user2.firstName} {user2.lastName}!{" "}
         </p>
-        <div className="flex mt-[15px]">
-          <p className="mr-[30px] text-[#FFFFFF] hover:cursor-pointer">
-            Overview
-          </p>
-          <p className="mr-[30px] text-[#FFFFFF] hover:cursor-pointer">About</p>
-          <p className="mr-[30px] text-[#FFFFFF] hover:cursor-pointer">
-            Archive
-          </p>
-        </div>
       </div>
       <div className="bg-[#374853] p-[15px] px-[15px]"></div>
-      <Over />
+      <Dash
+        about={user2.About}
+        head={user2.heading}
+        user={user2.username}
+        img={user2.image}
+        searchBar={searchBar}
+      />
     </>
   );
 }

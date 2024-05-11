@@ -6,8 +6,11 @@ import HeroNavbar from "./components/HomeComponents/HeroNavbar";
 import Hero3 from "./components/HomeComponents/hero3/page";
 import Hero4 from "./components/HomeComponents/hero4/Hero4";
 import Hero5 from "./components/HomeComponents/hero5/Hero5";
+import { currentUser } from "@clerk/nextjs/server";
 
-export default function Home() {
+export default async function Home() {
+  const user = await currentUser();
+  console.log(user);
   return (
     <>
       <HeroNavbar />
