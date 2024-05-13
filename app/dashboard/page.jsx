@@ -2,12 +2,13 @@
 
 // import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
-import LocationComponent from "../components/GetLocation/page";
 import { IoSearch } from "react-icons/io5";
 import Dash from "../components/DashboardComponents/Dash/page";
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
+  const router = useRouter();
   // const user = await currentUser();
   const [searchBar, setSearchBar] = useState("");
   const user = {
@@ -32,7 +33,12 @@ export default function Page() {
       <div className="bg-[#374853] py-[30px] flex items-center border-b-[1px] border-[#FFFFFF] sticky top-0 left-0 z-50	">
         <div className="flex w-[100%] items-center">
           <p className="text-[#FFFFFF] ml-[3%] text-[25px]">Logo</p>
-          <button className="text-[#FFFFFF] text-[15px] ml-[6%] focus:border-b-[1.5px] p-[10px]">
+          <button
+            className="text-[#FFFFFF] text-[15px] ml-[6%] focus:border-b-[1.5px] p-[10px]"
+            onClick={() => {
+              router.push("/initiatives");
+            }}
+          >
             Initiative feed
           </button>
           <button className="text-[#FFFFFF] text-[15px] ml-[3%] border-b-[1.5px] p-[10px]">

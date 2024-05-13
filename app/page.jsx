@@ -9,8 +9,8 @@ import Hero5 from "./components/HomeComponents/hero5/Hero5";
 import { currentUser } from "@clerk/nextjs/server";
 
 export default async function Home() {
-  const user = await currentUser();
-  console.log(user);
+  // const user = await currentUser();
+  // console.log(user);
   return (
     <>
       <HeroNavbar />

@@ -5,9 +5,11 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaRegThumbsUp } from "react-icons/fa";
 import "./style.css";
+import { useRouter } from "next/navigation";
 
 function Dash(props) {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
   const [theme, setTheme] = useState("");
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -36,7 +38,7 @@ function Dash(props) {
       MadeBy: "Kartik Garg",
       user: "kartik",
       Img: img,
-      CreatedAt: "Apr 09, 2024",
+      CreatedAt: "Apr 09, 2 024",
       Heading: "Heading will go here",
       SubDesc:
         "Corrupti fugit temporibus. Aspernatur eos reiciendis quis. Dolorem suscipit distinctio doloribus est est quam. Nesciunt ut sed quae et tenetur sunt maiores. Quam minus qui qui ipsa illum. Velit cum veniam modi doloremque nemo.",
@@ -64,8 +66,17 @@ function Dash(props) {
     <div className="flex">
       <div>
         <div className="bg-[#E0E7EB] p-[30px] w-[300px] ml-[20px] relative	 bottom-[30px] rounded-xl mb-[30px] mr-[30px]">
-          <p className="text-[#374853] mb-[25px]">Total initiatives created</p>
-          <p className="text-[#374853] text-[25px]">{number}</p>
+          <p className="text-[#374853]">Total initiatives created</p>
+          <hr />
+          <p className="text-[#374853] text-[25px] mt-[25px]">{number}</p>
+          <button
+            className="text-center w-[100%] bg-[#000] text-[#fff] py-[5px] mt-[20px] font-bold rounded-md"
+            onClick={() => {
+              router.push("create");
+            }}
+          >
+            Create Initiative
+          </button>
         </div>
         <div className="bg-[#E0E7EB] p-[30px] ml-[20px] relative	 bottom-[30px] rounded-xl min-h-[400px] w-[300px] mr-[30px]  h-[fit]">
           <p className="text-[25px] text-[#253037]">About</p>
@@ -331,9 +342,6 @@ function Dash(props) {
                   />
                   <div>
                     <p className="text-[20px] text-[#253037]">{item.MadeBy}</p>
-                    <p className="text-[15px] text-[#807e7e]">
-                      {item.CreatedAt}
-                    </p>
                   </div>
                 </div>
                 <p className="text-[20px] text-[#253037] mb-[20px]">
@@ -377,9 +385,6 @@ function Dash(props) {
                   />
                   <div>
                     <p className="text-[20px] text-[#253037]">{item.MadeBy}</p>
-                    <p className="text-[15px] text-[#807e7e]">
-                      {item.CreatedAt}
-                    </p>
                   </div>
                 </div>
                 <p className="text-[20px] text-[#253037] mb-[20px]">
