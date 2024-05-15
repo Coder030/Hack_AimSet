@@ -21,44 +21,119 @@ function Dash(props) {
   const search = props["searchBar"];
   const [number, setNumber] = useState(24);
   const [filter, setFilter] = useState("All");
-  const initiatives = [
+  const [initiatives, setInitiatives] = useState([
     {
-      MadeBy: "User Name",
-      user: "UserName",
-      Img: img,
+      MadeByName: "User Name",
+      MadeByUserName: "UserName",
+      UserImageUrl:
+        "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
       CreatedAt: "Apr 09, 2024",
-      Heading: "Heading will go here",
-      SubDesc:
+      Heading: "Voter 1",
+      SubDescription:
         "Corrupti fugit temporibus. Aspernatur eos reiciendis quis. Dolorem suscipit distinctio doloribus est est quam. Nesciunt ut sed quae et tenetur sunt maiores. Quam minus qui qui ipsa illum. Velit cum veniam modi doloremque nemo.",
       topic: "Animal",
       voters: ["userName1", "userName2", "userName3", "userName4", "kartik"],
+      votes: 5,
+      CreatedAt: "2023-01-01T00:00:00.000Z",
       id: "1",
     },
     {
-      MadeBy: "Kartik Garg",
-      user: "kartik",
-      Img: img,
+      MadeByName: "Kartik Garg",
+      MadeByUserName: "kartik",
+      UserImageUrl:
+        "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
       CreatedAt: "Apr 09, 2 024",
-      Heading: "Heading will go here",
-      SubDesc:
+      Heading: "Creator 2",
+      SubDescription:
         "Corrupti fugit temporibus. Aspernatur eos reiciendis quis. Dolorem suscipit distinctio doloribus est est quam. Nesciunt ut sed quae et tenetur sunt maiores. Quam minus qui qui ipsa illum. Velit cum veniam modi doloremque nemo.",
       topic: "Animal",
       voters: ["userName1", "userName2", "userName3", "userName4"],
+      votes: 4,
+      CreatedAt: "2023-02-01T00:00:00.000Z",
       id: "2",
     },
     {
-      MadeBy: "User Name",
-      user: "UserName",
-      Img: img,
+      MadeByName: "User Name",
+      MadeByUserName: "UserName",
+      UserImageUrl:
+        "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
       CreatedAt: "Apr 09, 2024",
-      Heading: "Heading will go here",
-      SubDesc:
+      Heading: "Nothing 3",
+      SubDescription:
         "Corrupti fugit temporibus. Aspernatur eos reiciendis quis. Dolorem suscipit distinctio doloribus est est quam. Nesciunt ut sed quae et tenetur sunt maiores. Quam minus qui qui ipsa illum. Velit cum veniam modi doloremque nemo.",
       topic: "Animal",
-      voters: ["userName1", "userName2", "userName3", "userName4"],
+      voters: [
+        "userName1",
+        "userName2",
+        "userName3",
+        "userName4",
+        "useName5",
+        "userName6",
+        "userName7",
+        "userName8",
+        "userName9",
+        "userName10",
+      ],
+      votes: 10,
+      CreatedAt: "2023-03-01T00:00:00.000Z",
+      latitude: 14.949843,
+      longitude: 75.506604,
       id: "3",
     },
-  ];
+    {
+      MadeByName: "User Name",
+      MadeByUserName: "UserName",
+      UserImageUrl:
+        "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
+      CreatedAt: "Apr 09, 2024",
+      Heading: "Nothing 4",
+      SubDescription:
+        "Corrupti fugit temporibus. Aspernatur eos reiciendis quis. Dolorem suscipit distinctio doloribus est est quam. Nesciunt ut sed quae et tenetur sunt maiores. Quam minus qui qui ipsa illum. Velit cum veniam modi doloremque nemo.",
+      topic: "Animal",
+      voters: [
+        "userName1",
+        "userName2",
+        "userName3",
+        "userName4",
+        "useName5",
+        "userName6",
+        "userName7",
+        "userName8",
+        "userName9",
+      ],
+      votes: 9,
+      CreatedAt: "2023-04-01T00:00:00.000Z",
+      latitude: 28.576639,
+      longitude: 77.388474,
+      id: "4",
+    },
+    {
+      MadeByName: "User Name",
+      MadeByUserName: "UserName",
+      UserImageUrl:
+        "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
+      CreatedAt: "Apr 09, 2024",
+      Heading: "Nothing 5",
+      SubDescription:
+        "Corrupti fugit temporibus. Aspernatur eos reiciendis quis. Dolorem suscipit distinctio doloribus est est quam. Nesciunt ut sed quae et tenetur sunt maiores. Quam minus qui qui ipsa illum. Velit cum veniam modi doloremque nemo.",
+      topic: "Events",
+      voters: [
+        "userName1",
+        "userName2",
+        "userName3",
+        "userName4",
+        "useName5",
+        "userName6",
+        "userName7",
+        "userName8",
+      ],
+      votes: 8,
+      CreatedAt: "2023-05-01T00:00:00.000Z",
+      latitude: -4.398444,
+      longitude: 51.436529,
+      id: "5",
+    },
+  ]);
   const [all, setAll] = useState(true);
   const [my, setMy] = useState(false);
   const [sup, setSup] = useState(false);
@@ -319,35 +394,39 @@ function Dash(props) {
         </div>
         {initiatives.map((item) => {
           if (
-            item.user === user &&
+            item.MadeByUserName === user &&
             item.topic.includes(theme) &&
             (filter === "All" || filter === "My") &&
             (item.Heading.includes(search) ||
-              item.SubDesc.includes(search) ||
-              item.MadeBy.includes(search))
+              item.SubDescription.includes(search) ||
+              item.MadeByName.includes(search))
           ) {
             return (
               <div
                 className="bg-[#F5F7F8] mt-[16px] p-[20px] rounded-2xl"
                 key={item.id}
               >
-                {/* <img src={item.Img} alt="" height={30} width={50} /> */}
+                {/* <img src={item.UserImageUrl} alt="" height={30} width={50} /> */}
                 <div className="flex items-center mb-[20px]">
                   <Image
-                    src={item.Img}
+                    src={item.UserImageUrl}
                     alt="profile image"
                     height={20}
                     width={40}
                     className="rounded-full mr-[15px]"
                   />
                   <div>
-                    <p className="text-[20px] text-[#253037]">{item.MadeBy}</p>
+                    <p className="text-[20px] text-[#253037]">
+                      {item.MadeByName}
+                    </p>
                   </div>
                 </div>
                 <p className="text-[20px] text-[#253037] mb-[20px]">
                   {item.Heading}
                 </p>
-                <p className="text-[#253037] text-[16px]">{item.SubDesc}</p>
+                <p className="text-[#253037] text-[16px]">
+                  {item.SubDescription}
+                </p>
                 <p className="text-[#FFFFFF] text-[15px] bg-[#58AEE4] w-fit p-[8px] rounded-3xl px-[25px] mt-[14px]">
                   {item.topic}
                 </p>
@@ -366,25 +445,27 @@ function Dash(props) {
             item.topic.includes(theme) &&
             (filter === "All" || filter === "Sup") &&
             (item.Heading.includes(search) ||
-              item.SubDesc.includes(search) ||
-              item.MadeBy.includes(search))
+              item.SubDescription.includes(search) ||
+              item.MadeByName.includes(search))
           ) {
             return (
               <div
                 className="bg-[#F5F7F8] mt-[16px] p-[20px] rounded-2xl"
                 key={item.id}
               >
-                {/* <img src={item.Img} alt="" height={30} width={50} /> */}
+                {/* <img src={item.UserImageUrl} alt="" height={30} width={50} /> */}
                 <div className="flex items-center mb-[20px]">
                   <Image
-                    src={item.Img}
+                    src={item.UserImageUrl}
                     alt="profile image"
                     height={20}
                     width={40}
                     className="rounded-full mr-[15px]"
                   />
                   <div>
-                    <p className="text-[20px] text-[#253037]">{item.MadeBy}</p>
+                    <p className="text-[20px] text-[#253037]">
+                      {item.MadeByName}
+                    </p>
                   </div>
                 </div>
                 <p className="text-[20px] text-[#253037] mb-[20px]">

@@ -92,7 +92,8 @@ function Page() {
     {
       MadeByName: "User Name",
       MadeByUserName: "UserName",
-      Img: "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
+      UserImageUrl:
+        "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
       CreatedAt: "Apr 09, 2024",
       Heading: "Voter 1",
       SubDescription:
@@ -106,7 +107,8 @@ function Page() {
     {
       MadeByName: "Kartik Garg",
       MadeByUserName: "kartik",
-      Img: "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
+      UserImageUrl:
+        "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
       CreatedAt: "Apr 09, 2 024",
       Heading: "Creator 2",
       SubDescription:
@@ -120,7 +122,8 @@ function Page() {
     {
       MadeByName: "User Name",
       MadeByUserName: "UserName",
-      Img: "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
+      UserImageUrl:
+        "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
       CreatedAt: "Apr 09, 2024",
       Heading: "Nothing 3",
       SubDescription:
@@ -147,7 +150,8 @@ function Page() {
     {
       MadeByName: "User Name",
       MadeByUserName: "UserName",
-      Img: "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
+      UserImageUrl:
+        "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
       CreatedAt: "Apr 09, 2024",
       Heading: "Nothing 4",
       SubDescription:
@@ -173,7 +177,8 @@ function Page() {
     {
       MadeByName: "User Name",
       MadeByUserName: "UserName",
-      Img: "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
+      UserImageUrl:
+        "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yZzhSWTE3R28zTENJcERUVGRYTEhoT3lKSDAifQ",
       CreatedAt: "Apr 09, 2024",
       Heading: "Nothing 5",
       SubDescription:
@@ -356,10 +361,10 @@ function Page() {
                 className="bg-[#F5F7F8] mt-[16px] p-[20px] rounded-2xl"
                 key={item.id}
               >
-                {/* <img src={item.Img} alt="" height={30} width={50} /> */}
+                {/* <img src={item.UserImageUrl} alt="" height={30} width={50} /> */}
                 <div className="flex items-center mb-[20px]">
                   <Image
-                    src={item.Img}
+                    src={item.UserImageUrl}
                     alt="profile image"
                     height={20}
                     width={40}
@@ -404,10 +409,10 @@ function Page() {
                 className="bg-[#F5F7F8] mt-[16px] p-[20px] rounded-2xl"
                 key={item.id}
               >
-                {/* <img src={item.Img} alt="" height={30} width={50} /> */}
+                {/* <img src={item.UserImageUrl} alt="" height={30} width={50} /> */}
                 <div className="flex items-center mb-[20px]">
                   <Image
-                    src={item.Img}
+                    src={item.UserImageUrl}
                     alt="profile image"
                     height={20}
                     width={40}
