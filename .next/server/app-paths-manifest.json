@@ -1,8 +1,8 @@
 {
-  "/details/[id]/page": "app/details/[id]/page.js",
-  "/page": "app/page.js",
   "/create/page": "app/create/page.js",
+  "/details/[id]/page": "app/details/[id]/page.js",
   "/initiatives/page": "app/initiatives/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/dashboard/page": "app/dashboard/page.js"
+  "/dashboard/page": "app/dashboard/page.js",
+  "/page": "app/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
