@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^5.0.0-beta.46",
+    "@radix-ui/react-alert-dialog": "^1.0.5",
+    "@radix-ui/react-dialog": "^1.0.5",
     "@react-native-community/geolocation": "^3.2.1",
     "aldo-alert": "^1.0.8",
     "axios": "^1.6.8",
@@ -20,6 +22,7 @@
     "react-dom": "^18",
     "react-icons": "^5.2.1",
     "react-native-geolocation-service": "^5.3.1",
+    "resend": "^3.2.0",
     "sonner": "^1.4.41",
     "tailwindcss-current": "^1.0.0"
   },

@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import wp1 from "@/app/assets/wp-1.png";
-import wp2 from "@/app/assets/wp-2.png";
-import wp3 from "@/app/assets/wp-3.png";
-import MapImage from "@/app/assets/map.png";
+import wp1 from "../../../assets/wp-1.png";
+import wp2 from "../../../assets/wp-2.png";
+import wp3 from "../../../assets/wp-3.png";
 
 function Hero2() {
   // Define JSON data for the cards
@@ -11,18 +10,21 @@ function Hero2() {
     {
       image: wp1,
       title: "Solve issues in your community",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur accusantium placeat porro facilis magni libero aliquam perferendis a amet quos, at sed et nostrum nobis, harum ratione error. Adipisci, dolore."
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur accusantium placeat porro facilis magni libero aliquam perferendis a amet quos, at sed et nostrum nobis, harum ratione error. Adipisci, dolore.",
     },
     {
       image: wp2,
       title: "Render assistance to your neighbour",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur accusantium placeat porro facilis magni libero aliquam perferendis a amet quos, at sed et nostrum nobis, harum ratione error. Adipisci, dolore."
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur accusantium placeat porro facilis magni libero aliquam perferendis a amet quos, at sed et nostrum nobis, harum ratione error. Adipisci, dolore.",
     },
     {
       image: wp3,
       title: "Receive assistance in return",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur accusantium placeat porro facilis magni libero aliquam perferendis a amet quos, at sed et nostrum nobis, harum ratione error. Adipisci, dolore."
-    }
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur accusantium placeat porro facilis magni libero aliquam perferendis a amet quos, at sed et nostrum nobis, harum ratione error. Adipisci, dolore.",
+    },
   ];
 
   return (
@@ -39,16 +41,17 @@ function Hero2() {
       <br />
       <div className="grid grid-cols-1 lg:grid-cols-3 w-11/12 mx-auto gap-5">
         {cardData.map((card, index) => (
-          <div key={index} className="bg-[#FFFFFF] h-auto py-10 
+          <div
+            key={index}
+            className="bg-[#FFFFFF] h-auto py-10 
           flex justify-center items-center flex-col p-5
-           mb-5 rounded-3xl mx-auto shadow-md">
+           mb-5 rounded-3xl mx-auto shadow-md"
+          >
             <Image src={card.image} alt="map" className="m-0" />
             <p className="md:text-[25px] text-center font-bold text-[#000000] nunito m-7 text-[20px]">
               {card.title}
             </p>
-            <p className="text-base text-center">
-              {card.description}
-            </p>
+            <p className="text-base text-center">{card.description}</p>
           </div>
         ))}
       </div>

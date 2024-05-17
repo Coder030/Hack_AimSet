@@ -1,34 +1,34 @@
 import React from "react";
 import Image from "next/image";
-import MapImage from "@/app/assets/map.png";
-import PeopleImage from "@/app/assets/people.png";
+import MapImage from "../../../assets/map.png";
+import PeopleImage from "../../../assets/people.png";
 
 function Hero5() {
   // Footer data
-const footerData = [
-  {
-    title: "General",
-    links: [
-      { name: "About Us", href: "#" },
-      { name: "Terms & Conditions", href: "#" },
-      { name: "Privacy Policy", href: "#" },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      { name: "Join Community", href: "#" },
-      { name: "Community Guidelines", href: "#" },
-    ],
-  },
-  {
-    title: "Support",
-    links: [
-      { name: "Contact Us", href: "#" },
-      { name: "FAQs", href: "#" },
-    ],
-  },
-];
+  const footerData = [
+    {
+      title: "General",
+      links: [
+        { name: "About Us", href: "#" },
+        { name: "Terms & Conditions", href: "#" },
+        { name: "Privacy Policy", href: "#" },
+      ],
+    },
+    {
+      title: "Community",
+      links: [
+        { name: "Join Community", href: "#" },
+        { name: "Community Guidelines", href: "#" },
+      ],
+    },
+    {
+      title: "Support",
+      links: [
+        { name: "Contact Us", href: "#" },
+        { name: "FAQs", href: "#" },
+      ],
+    },
+  ];
   return (
     <div
       className="bg-[#374853] w-full 
@@ -87,35 +87,39 @@ const footerData = [
             {/* left */}
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-1">
-                <h6 className="md:text-[20px] leading-[50px] 
-      font-bold text-[#F1F8EC] nunito text-[14px]">Logo</h6>
+                <h6
+                  className="md:text-[20px] leading-[50px] 
+      font-bold text-[#F1F8EC] nunito text-[14px]"
+                >
+                  Logo
+                </h6>
                 <span className="w-full  text-[#F1F8EC]">
                   Make Your <br /> Neighborhood Better
                 </span>
               </div>
-              <p className="mt-20">
-                © 2024 USA, Inc. All rights reserved.
-              </p>
+              <p className="mt-20">© 2024 USA, Inc. All rights reserved.</p>
             </div>
             {/* right */}
             <div className="grid grid-cols-1 md:grid-cols-3">
-            {footerData.map((item, index) => (
-              <div key={index} className="flex flex-col">
-                <h6 className="md:text-[20px] leading-[50px] 
-                font-bold text-[#F1F8EC] nunito text-[14px]">
-                  {item.title}
-                </h6>
-                {item.links.map((link, linkIndex) => (
-                  <a
-                    key={linkIndex}
-                    href={link.href}
-                    className="w-full text-[#F1F8EC] hover:underline"
+              {footerData.map((item, index) => (
+                <div key={index} className="flex flex-col">
+                  <h6
+                    className="md:text-[20px] leading-[50px] 
+                font-bold text-[#F1F8EC] nunito text-[14px]"
                   >
-                    {link.name}
-                  </a>
-                ))}
-              </div>
-            ))}
+                    {item.title}
+                  </h6>
+                  {item.links.map((link, linkIndex) => (
+                    <a
+                      key={linkIndex}
+                      href={link.href}
+                      className="w-full text-[#F1F8EC] hover:underline"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                </div>
+              ))}
             </div>
           </div>
         </div>

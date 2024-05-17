@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ImageOne from "@/app/assets/ph2.png";
-import ImageMap from "@/app/assets/map2.png";
+import ImageOne from "../../../assets/ph2.png";
 
 const dummyData = [
   {

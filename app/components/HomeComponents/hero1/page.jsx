@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import MapImage from "@/app/assets/map.png";
-import PeopleImage from "@/app/assets/people.png";
+import MapImage from "../../../assets/map.png";
+import PeopleImage from "../../../assets/people.png";
 
 function Hero1() {
   return (
